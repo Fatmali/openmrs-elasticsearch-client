@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  elasticsearch-client:
+    build:
+      context: ./
+    volumes:
+      - ./logs/:/app/logs
+    ports:
+      - "8550:8550"
